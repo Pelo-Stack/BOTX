@@ -18,7 +18,7 @@ const instagramlu = 'https://instagram.com/anggorgamep'; // Nama Instagramlu cok
 const whatsapplu = '0838-7006-8641'; // Nomor whatsapplu cok
 const kapanbotaktif = 'Aktif Mulai pukul 08:15 - 21:00(Jumat dan Minggu Tutup)'; // Kapan bot lu aktif
 const grupch1 = 'https://chat.whatsapp.com/JyltroeLvoaIX3ZFKDcY4G'; // OFFICIAL GRUP LU 1
-// const grupch2 = Blom ada
+const youtubelu = 'https://youtube.com/channel/UCZTUYmFg7nGWaICg1Lz3k4g'; // yoitube anda nak
 //
 const
 {
