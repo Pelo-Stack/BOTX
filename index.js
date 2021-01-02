@@ -11,6 +11,17 @@ const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
+const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+            + 'VERSION:3.0\n'
+            + 'FN:Ownerku Tersayang\n' // full name
+            + 'ORG:Creator BOT X-PLAY;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6283870068641:+62 838-7006-8641\n' // WhatsApp ID + phone number
+            + 'END:VCARD'
+const vcard2 = 'BEGIN:VCARD\n' // metadata of the contact card
+             + 'VERSION:3.0\n'
+             + 'FN:Dyandra' // full name
+             + 'ORG:Collab ama Ownerku;\n' // the organization of the contact
+             + 'TEL;type=CELL;type=VOICE;waid=6285865462352:+62 858-6546-2352\n' // WhatsApp ID + phone number
 				  
 //
 const BotName = 'BOT X-PLAY'; // Nama Bot Whatsapp
@@ -49,7 +60,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] ridho Ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -64,11 +75,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridho_setiawan02`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @anggorgamep`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridho_setiawan02`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @anggorgamep`)
 })
 
 conn.on('message-new', async(m) =>
