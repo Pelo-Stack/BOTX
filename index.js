@@ -254,7 +254,8 @@ if (text.includes('.nulis')){
        client.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
        client.sendMessage(id, 'Nieh nomer pacarku...Eeh maksudku nomer owner/creator, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
-                   })
+})
+}
     
 
 
