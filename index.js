@@ -247,8 +247,10 @@ if (text.includes('.nulis')){
     })
 }
          
-       if (text.includes("!creator)){
-			
+       
+	
+	if (text.includes('!creator')){
+	const teks = text.replace(/!creator /, "")
        client.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
        client.sendMessage(id, 'Nieh nomer pacarku...Eeh maksudku nomer owner/creator, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
            await client.sendMessage(id, value,MessageType.text)
@@ -257,7 +259,7 @@ if (text.includes('.nulis')){
 
 
     
-           if (text.includes("!collab)){
+           if (text.includes('!collab')){
 	const teks = text.replace(/!collab /, "")		
        client.sendMessage(id, {displayname: "Jeff", vcard2: vcard2}, MessageType.contact)
        client.sendMessage(id, 'Nieh nomer Collab Author aku, chat ajah terus di save, nanti di back kok kak ><',MessageType.text)
